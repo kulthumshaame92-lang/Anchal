@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartPulse — Heart Health Across the Globe</title>
+    <meta name="description"
+        content="HeartPulse is a compassionate resource dedicated to heart health awareness worldwide. Explore cardiovascular wellness tips, regional heart health data, patient stories, and expert guidance.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+       NAVBAR
+       ═══════════════════════════════════════════════════════════════════════ -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <!-- Heart Icon -->
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                </svg>
+                Heart<span>Pulse</span>
+            </a>
+
+            <div class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Heart Conditions</a></li>
+                <li><a href="#regions" class="nav-link">Regions</a></li>
+                <li><a href="#stories" class="nav-link">Stories</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Get in Touch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+       HERO — Anti-Gravity Zone
+       ═══════════════════════════════════════════════════════════════════════ -->
+    <header class="hero" id="hero">
+        <canvas id="gravityCanvas"></canvas>
+
+        <!-- Orbit rings -->
+        <div class="orbit-ring orbit-1"></div>
+        <div class="orbit-ring orbit-2"></div>
+        <div class="orbit-ring orbit-3"></div>
+
+        <!-- Floating badges -->
+        <div class="hero-float-badge float-a">❤️</div>
+        <div class="hero-float-badge float-b">🩺</div>
+        <div class="hero-float-badge float-c">💓</div>
+        <div class="hero-float-badge float-d">🫀</div>
+        <div class="hero-float-badge float-e">🏥</div>
+
+        <div class="hero-content" id="heroContent">
+            <p class="hero-tag antigravity-item">✦ Caring for Hearts Everywhere</p>
+            <h1 class="hero-title antigravity-item">
+                Protecting Hearts, <span class="text-highlight">Saving Lives</span> Worldwide
+            </h1>
+            <p class="hero-desc antigravity-item">
+                Welcome to HeartPulse — your gentle, trusted companion in cardiovascular wellness.
+                We are honoured to raise awareness about heart health across the globe, providing
+                warm guidance, credible research, and heartfelt hope to every community we serve.
+            </p>
+            <div class="hero-btns antigravity-item">
+                <a href="#services" class="btn btn-primary">Explore Heart Conditions</a>
+                <a href="#contact" class="btn btn-outline">Speak With Us</a>
+            </div>
+        </div>
+
+        <!-- Anti-Gravity Toggle -->
+        <button class="antigravity-toggle" id="antigravityBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="m8 12 4-4 4 4" />
+                <path d="M12 16V8" />
+            </svg>
+            Anti-Gravity
+        </button>
+    </header>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+       ABOUT
+       ═══════════════════════════════════════════════════════════════════════ -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header fade-up">
+                <p class="section-tag">Who We Are</p>
+                <h2 class="section-title">A Heartfelt Mission for Every Heartbeat</h2>
+                <p class="section-desc">
+                    We sincerely believe that every heart deserves care, attention, and the very best
+                    medical knowledge — regardless of geography or circumstance.
+                </p>
+            </div>
+
+            <div class="about-grid fade-up">
+                <div class="about-text">
+                    <p>
+                        <strong>Cardiovascular disease</strong> remains the leading cause of mortality worldwide,
+                        yet many heart conditions are preventable with the right knowledge, early detection, and
+                        compassionate support. At HeartPulse, we are dedicated to changing that story — one heart
+                        at a time.
+                    </p>
+                    <p>
+                        Our team of <strong>cardiologists, cardiac nurses, and public health specialists</strong>
+                        works tirelessly across multiple continents. From screening programmes in rural Africa
+                        to advanced cardiac rehabilitation centres in Europe and North America, we bring world-class
+                        heart care to communities who need it most.
+                    </p>
+                    <p>
+                        We warmly invite you to learn about the conditions we address, the regions we serve,
+                        and the real stories of <strong>resilience and recovery</strong> that inspire our work
+                        every single day.
+                    </p>
+                </div>
+
+                <div class="about-stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-num" data-count="17900">0</div>
+                        <span class="stat-label">Lives Touched Annually</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num" data-count="36">0</div>
+                        <span class="stat-label">Countries Served</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num" data-count="250">0</div>
+                        <span class="stat-label">Heart Specialists</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num" data-count="96.8">0</div>
+                        <span class="stat-label">% Positive Outcomes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+       HEART CONDITIONS (Services)
+       ═══════════════════════════════════════════════════════════════════════ -->
+    <section class="section issues-section" id="services">
+        <div class="container">
+            <div class="section-header fade-up">
+                <p class="section-tag">Heart Conditions</p>
+                <h2 class="section-title">Understanding the Heart, Gently</h2>
+                <p class="section-desc">
+                    We kindly encourage you to learn about these common cardiovascular conditions.
+                    Knowledge is a powerful step toward prevention and healing.
+                </p>
+            </div>
+
+            <div class="issues-grid fade-up">
+                <!-- Card 1 -->
+                <div class="issue-card" data-tilt>
+                    <span class="issue-number">01</span>
+                    <div class="issue-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                        </svg>
+                    </div>
+                    <h3>Coronary Artery Disease</h3>
+                    <p>
+                        The most common type of heart disease, caused by plaque build-up in the arteries.
+                        With early detection, gentle lifestyle changes, and proper medical care, many patients
+                        lead full, active lives. Please don't hesitate to learn more.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="issue-card" data-tilt>
+                    <span class="issue-number">02</span>
+                    <div class="issue-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                        </svg>
+                    </div>
+                    <h3>Arrhythmia &amp; Irregular Heartbeat</h3>
+                    <p>
+                        When the heart beats too fast, too slow, or irregularly, it can feel quite alarming.
+                        We want you to know that many arrhythmias are manageable with medication, lifestyle
+                        adjustments, or minimally invasive procedures.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="issue-card" data-tilt>
+                    <span class="issue-number">03</span>
+                    <div class="issue-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 20V10" />
+                            <path d="M12 20V4" />
+                            <path d="M6 20v-6" />
+                        </svg>
+                    </div>
+                    <h3>Hypertension (High Blood Pressure)</h3>
+                    <p>
+                        Often called the "silent killer," high blood pressure affects nearly 1.3 billion people
+                        globally. Regular monitoring, a balanced diet, and stress management can make a remarkable
+                        difference. We are here to guide you kindly through it.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="issue-card" data-tilt>
+                    <span class="issue-number">04</span>
+                    <div class="issue-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                        </svg>
+                    </div>
+                    <h3>Heart Failure</h3>
+                    <p>
+                        Heart failure doesn't mean the heart has stopped — it means the heart needs a little
+                        extra help pumping effectively. With modern treatments and compassionate cardiac
+                        rehabilitation, quality of life can improve significantly.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="issue-card" data-tilt>
+                    <span class="issue-number">05</span>
+                    <div class="issue-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                    </div>
+                    <h3>Stroke &amp; Cerebrovascular Disease</h3>
+                    <p>
+                        Closely related to heart health, strokes occur when blood flow to the brain is disrupted.
+                        Recognising the warning signs — face drooping, arm weakness, speech difficulty — and acting
+                        quickly can save lives. Every second truly matters.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="issue-card" data-tilt>
+                    <span class="issue-number">06</span>
+                    <div class="issue-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3>Congenital Heart Defects</h3>
+                    <p>
+                        Some heart conditions are present from birth. Thanks to remarkable advances in paediatric
+                        cardiology, children born with heart defects can now receive life-changing surgeries and
+                        treatments. Every little heart deserves the best care.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+       REGIONS
+       ═══════════════════════════════════════════════════════════════════════ -->
+    <section class="section regions-section" id="regions">
+        <div class="container">
+            <div class="section-header fade-up">
+                <p class="section-tag">Global Reach</p>
+                <h2 class="section-title">Heart Health Around the World</h2>
+                <p class="section-desc">
+                    We are honoured to serve communities across six continents, adapting our care
+                    to each region's unique health challenges, traditions, and needs.
+                </p>
+            </div>
+
+            <div class="regions-grid fade-up">
+                <!-- Region 1 -->
+                <div class="region-card">
+                    <div class="region-icon">🇺🇸</div>
+                    <h3>North America</h3>
+                    <p>
+                        Heart disease is the leading cause of death in the US and Canada. Our programmes
+                        focus on cholesterol management, cardiac rehabilitation, and community screening events
+                        to catch problems early.
+                    </p>
+                    <div class="region-tags">
+                        <span>Cholesterol</span>
+                        <span>Cardiac Rehab</span>
+                        <span>Screening</span>
+                    </div>
+                </div>
+
+                <!-- Region 2 -->
+                <div class="region-card">
+                    <div class="region-icon">🌍</div>
+                    <h3>Sub-Saharan Africa</h3>
+                    <p>
+                        Rheumatic heart disease and untreated hypertension disproportionately affect
+                        young people here. Our mobile clinics and training programmes help local health
+                        workers detect and treat heart conditions gently and effectively.
+                    </p>
+                    <div class="region-tags">
+                        <span>Rheumatic Heart</span>
+                        <span>Mobile Clinics</span>
+                        <span>Youth Health</span>
+                    </div>
+                </div>
+
+                <!-- Region 3 -->
+                <div class="region-card">
+                    <div class="region-icon">🌏</div>
+                    <h3>South &amp; East Asia</h3>
+                    <p>
+                        India, China, and neighbouring nations face a growing epidemic of cardiovascular disease.
+                        We respectfully partner with local hospitals to provide preventive cardiology, lifestyle
+                        counselling, and affordable treatment access.
+                    </p>
+                    <div class="region-tags">
+                        <span>Prevention</span>
+                        <span>Lifestyle Medicine</span>
+                        <span>Accessibility</span>
+                    </div>
+                </div>
+
+                <!-- Region 4 -->
+                <div class="region-card">
+                    <div class="region-icon">🇪🇺</div>
+                    <h3>Europe</h3>
+                    <p>
+                        European nations lead in cardiac research and advanced surgical techniques.
+                        We collaborate with leading institutions across the UK, Germany, and France on cutting-edge
+                        heart failure management and valve replacement programmes.
+                    </p>
+                    <div class="region-tags">
+                        <span>Research</span>
+                        <span>Valve Surgery</span>
+                        <span>Heart Failure</span>
+                    </div>
+                </div>
+
+                <!-- Region 5 -->
+                <div class="region-card">
+                    <div class="region-icon">🌎</div>
+                    <h3>Latin America</h3>
+                    <p>
+                        Chagas disease-related heart conditions and rising rates of hypertension require dedicated
+                        attention. Our warm, community-based outreach connects families with cardiac
+                        screenings and culturally sensitive health education.
+                    </p>
+                    <div class="region-tags">
+                        <span>Chagas Disease</span>
+                        <span>Hypertension</span>
+                        <span>Community Care</span>
+                    </div>
+                </div>
+
+                <!-- Region 6 -->
+                <div class="region-card">
+                    <div class="region-icon">🕌</div>
+                    <h3>Middle East &amp; North Africa</h3>
+                    <p>
+                        Metabolic syndrome and coronary artery disease are significant concerns.
+                        We respectfully consider fasting practices and regional dietary habits while
+                        providing evidence-based cardiac wellness programmes.
+                    </p>
+                    <div class="region-tags">
+                        <span>Metabolic Health</span>
+                        <span>Coronary Care</span>
+                        <span>Cultural Sensitivity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+       PATIENT STORIES / TESTIMONIALS
+       ═══════════════════════════════════════════════════════════════════════ -->
+    <section class="section stories-section" id="stories">
+        <div class="container">
+            <div class="section-header fade-up">
+                <p class="section-tag">Patient Stories</p>
+                <h2 class="section-title">Hearts That Beat With Hope</h2>
+                <p class="section-desc" style="color: var(--blue-300);">
+                    We are deeply honoured that our patients have shared their journeys.
+                    Their courage inspires everything we do.
+                </p>
+            </div>
+
+            <div class="stories-grid fade-up">
+                <!-- Story 1 -->
+                <div class="story-card">
+                    <blockquote>
+                        "After my heart attack at 52, I was terrified. The HeartPulse team in London
+                        treated me not just as a patient, but as a person. Their cardiac rehab programme
+                        was gentle, encouraging, and gave me my confidence back. I walk 5km every day now."
+                    </blockquote>
+                    <div class="story-author">
+                        <div class="author-circle">JW</div>
+                        <div>
+                            <span class="author-name">James Whitfield</span>
+                            <span class="author-place">London, United Kingdom</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story 2 -->
+                <div class="story-card">
+                    <blockquote>
+                        "My daughter was born with a congenital heart defect. The doctors explained
+                        everything so kindly and performed her surgery with such skill. Today she is
+                        a happy, active little girl. We will always be grateful to HeartPulse."
+                    </blockquote>
+                    <div class="story-author">
+                        <div class="author-circle">FO</div>
+                        <div>
+                            <span class="author-name">Fatima Ouédraogo</span>
+                            <span class="author-place">Ouagadougou, Burkina Faso</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story 3 -->
+                <div class="story-card">
+                    <blockquote>
+                        "I ignored my blood pressure for years until a free screening event by HeartPulse
+                        caught it early. They showed me how small changes — less salt, more walking, calmer
+                        mornings — could protect my heart. Their warmth truly changed my life."
+                    </blockquote>
+                    <div class="story-author">
+                        <div class="author-circle">RK</div>
+                        <div>
+                            <span class="author-name">Rajesh Kumar</span>
+                            <span class="author-place">New Delhi, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+       CONTACT
+       ═══════════════════════════════════════════════════════════════════════ -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid fade-up">
+                <div class="contact-info">
+                    <p class="section-tag">Get in Touch</p>
+                    <h2 class="section-title">We'd Love to Hear From You</h2>
+                    <p>
+                        Whether you have a question about heart health, would like to find a specialist
+                        near you, or simply wish to share your story — please reach out. We respond to
+                        every message with warmth and care.
+                    </p>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z" />
+                            </svg>
+                            +1 (800) 555-HEART
+                        </div>
+                        <div class="info-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                            hello@heartpulse.org
+                        </div>
+                        <div class="info-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            36 Countries, 250+ Specialists
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">Your Name</label>
+                            <input type="text" id="fname" placeholder="e.g. Sarah Johnson" autocomplete="name">
+                            <span class="field-error" id="fnameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="femail">Email Address</label>
+                            <input type="email" id="femail" placeholder="e.g. sarah@email.com" autocomplete="email">
+                            <span class="field-error" id="femailError"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="fmessage">Your Message</label>
+                        <textarea id="fmessage" rows="5"
+                            placeholder="Please share how we may help you. We are truly here to listen."></textarea>
+                        <span class="field-error" id="fmessageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">Send Message</button>
+
+                    <div class="form-success-msg" id="formSuccess">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <path d="m9 11 3 3L22 4" />
+                        </svg>
+                        <p>Thank you so much for reaching out! We have received your message and will respond within 24
+                            hours. Your
+                            heart health matters deeply to us.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════════════ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                        </svg>
+                        Heart<span>Pulse</span>
+                    </a>
+                    <p>
+                        A compassionate global initiative dedicated to heart health awareness,
+                        prevention, and care — because every heartbeat matters.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Heart Conditions</a></li>
+                        <li><a href="#regions">Global Reach</a></li>
+                        <li><a href="#stories">Patient Stories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Conditions</h4>
+                    <ul>
+                        <li><a href="#services">Coronary Disease</a></li>
+                        <li><a href="#services">Hypertension</a></li>
+                        <li><a href="#services">Arrhythmia</a></li>
+                        <li><a href="#services">Heart Failure</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-row">
+                        <!-- Twitter / X -->
+                        <a href="#" class="social-btn" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2Z" />
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="#" class="social-btn" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6Z" />
+                                <rect width="4" height="12" x="2" y="9" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#" class="social-btn" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="#" class="social-btn" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+                                <path d="m10 15 5-3-5-3z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 HeartPulse. All rights reserved.</span>
+                <span>Made with ❤️ for hearts everywhere.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="to-top" id="toTopBtn" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="m18 15-6-6-6 6" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
